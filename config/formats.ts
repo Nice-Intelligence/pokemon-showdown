@@ -21,7 +21,18 @@ export const Formats: FormatList = [
 
 	// S/V Singles
 	///////////////////////////////////////////////////////////////////
-
+	{
+		section: "Bot Traing",
+	},
+	{
+		name:"[Gen 8] Random Battle Set Teams",
+		desc: `Format for importing set teams gathered from random battles used for RL training.`,
+		threads: [
+			`&bullet; Holy Shit We Did It!`,
+		],
+		mod: 'gen8',
+		ruleset: [],
+	},
 	{
 		section: "S/V Singles",
 	},
