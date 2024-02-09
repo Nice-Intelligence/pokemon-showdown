@@ -1359,12 +1359,6 @@
         "doublesLevel": 86,
         "doublesMoves": ["flipturn", "liquidation", "muddywater", "protect", "superpower"]
     },
-    "basculinbluestriped": {
-        "level": 85,
-        "moves": ["aquajet", "crunch", "flipturn", "liquidation", "psychicfangs", "superpower"],
-        "doublesLevel": 86,
-        "doublesMoves": ["flipturn", "liquidation", "muddywater", "protect", "superpower"]
-    },
     "krookodile": {
         "level": 78,
         "moves": ["closecombat", "earthquake", "knockoff", "stealthrock", "stoneedge"],
@@ -1987,7 +1981,7 @@
         "doublesLevel": 81,
         "doublesMoves": ["accelerock", "closecombat", "drillrun", "protect", "rockslide", "swordsdance"]
     },
-    "wishiwashischool": {
+    "wishiwashi": {
         "level": 85,
         "moves": ["earthquake", "hydropump", "icebeam", "scald", "uturn"],
         "doublesLevel": 88,
@@ -2324,12 +2318,6 @@
         "doublesMoves": ["heatwave", "moongeistbeam", "photongeyser", "protect", "thunderwave"]
     },
     "magearna": {
-        "level": 74,
-        "moves": ["agility", "calmmind", "flashcannon", "fleurcannon"],
-        "doublesLevel": 72,
-        "doublesMoves": ["agility", "aurasphere", "dazzlinggleam", "flashcannon", "fleurcannon", "protect", "trick"]
-    },
-    "magearnaoriginal": {
         "level": 74,
         "moves": ["agility", "calmmind", "flashcannon", "fleurcannon"],
         "doublesLevel": 72,
@@ -2740,12 +2728,6 @@
         "moves": ["bulkup", "closecombat", "icepunch", "surgingstrikes", "uturn"]
     },
     "zarude": {
-        "level": 78,
-        "moves": ["bulkup", "closecombat", "darkestlariat", "junglehealing", "powerwhip", "uturn"],
-        "doublesLevel": 80,
-        "doublesMoves": ["closecombat", "darkestlariat", "junglehealing", "powerwhip", "protect"]
-    },
-    "zarudedada": {
         "level": 78,
         "moves": ["bulkup", "closecombat", "darkestlariat", "junglehealing", "powerwhip", "uturn"],
         "doublesLevel": 80,
