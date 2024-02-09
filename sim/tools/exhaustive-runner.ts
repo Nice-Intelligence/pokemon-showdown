@@ -45,16 +45,16 @@ export class ExhaustiveRunner {
 		'gen1customgame',
 	];
 
-	private readonly format: string;
-	private readonly cycles: number;
-	private readonly prng: PRNG;
-	private readonly log: boolean;
-	private readonly maxGames?: number;
-	private readonly maxFailures?: number;
-	private readonly dual: boolean | 'debug';
+	protected readonly format: string;
+	protected readonly cycles: number;
+	protected readonly prng: PRNG;
+	protected readonly log: boolean;
+	protected readonly maxGames?: number;
+	protected readonly maxFailures?: number;
+	protected readonly dual: boolean | 'debug';
 
-	private failures: number;
-	private games: number;
+	protected failures: number;
+	protected games: number;
 
 	constructor(options: ExhaustiveRunnerOptions) {
 		this.format = options.format;
@@ -188,11 +188,11 @@ class TeamGenerator {
 	// the combinations they need to exercise the simulator more thoroughly.
 	static readonly COMBO = 0.5;
 
-	private readonly dex: typeof Dex;
-	private readonly prng: PRNG;
-	private readonly pools: Pools;
-	private readonly signatures: Map<string, {item: string, move?: string}[]>;
-	private readonly natures: readonly string[];
+	protected readonly dex: typeof Dex;
+	protected readonly prng: PRNG;
+	protected readonly pools: Pools;
+	protected readonly signatures: Map<string, {item: string, move?: string}[]>;
+	protected readonly natures: readonly string[];
 
 	constructor(
 		dex: typeof Dex, prng: PRNG | PRNGSeed | null, pools: Pools,
@@ -263,6 +263,60 @@ class TeamGenerator {
 		return team;
 	}
 }
+
+// class OurTeamGenerator extends TeamGenerator{
+// 	override generate(): PokemonSet[] {
+// 		const team: PokemonSet[] = [];
+// 		const current_seed = this.prng.seed;
+// 		for (const pokemon of this.pools.pokemon.next(6)) {
+// 			const species = this.dex.species.get(pokemon);
+// 			const randomEVs = () => this.prng.next(253);
+// 			const randomIVs = () => this.prng.next(32);
+
+// 			let item;
+// 			const moves = [];
+// 			const combos = this.signatures.get(species.id);
+// 			if (combos && this.prng.next() > TeamGenerator.COMBO) {
+// 				const combo = this.prng.sample(combos);
+// 				item = combo.item;
+// 				if (combo.move) moves.push(combo.move);
+// 			} else {
+// 				item = this.dex.gen >= 2 ? this.pools.items.next() : '';
+// 			}
+
+// 			team.push({
+// 				name: species.baseSpecies,
+// 				species: species.name,
+// 				gender: species.gender,
+// 				item,
+// 				ability: this.dex.gen >= 3 ? this.pools.abilities.next() : 'None',
+// 				moves: moves.concat(...this.pools.moves.next(4 - moves.length)),
+// 				evs: {
+// 					hp: randomEVs(),
+// 					atk: randomEVs(),
+// 					def: randomEVs(),
+// 					spa: randomEVs(),
+// 					spd: randomEVs(),
+// 					spe: randomEVs(),
+// 				},
+// 				ivs: {
+// 					hp: randomIVs(),
+// 					atk: randomIVs(),
+// 					def: randomIVs(),
+// 					spa: randomIVs(),
+// 					spd: randomIVs(),
+// 					spe: randomIVs(),
+// 				},
+// 				nature: this.prng.sample(this.natures),
+// 				level: this.prng.next(50, 100),
+// 				happiness: this.prng.next(256),
+// 				shiny: this.prng.randomChance(1, 1024),
+// 			});
+// 		}
+// 		this.prng.seed = current_seed;
+// 		return team;
+// 	}
+// }
 
 class Pool {
 	readonly possible: string[];

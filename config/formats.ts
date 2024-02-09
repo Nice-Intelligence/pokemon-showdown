@@ -26,11 +26,20 @@ export const Formats: FormatList = [
 	},
 	{
 		name:"[Gen 8] Random Battle Set Teams",
-		desc: `Format for importing set teams gathered from random battles used for RL training.`,
+		desc: `Format for importing set teams gathered from random battles used for RL training. \m Possible Use Cases Below:`,
 		threads: [
-			`&bullet; Holy Shit We Did It!`,
+			`&bullet; Mirrored Team`,
+			`&bullet; Team Switching`
 		],
 		mod: 'gen8',
+		ruleset: [],
+	},
+	{
+		name:"[Gen 8] Random Battle Mirrored Teams",
+		desc: `Random battle where both players have same team`,
+		threads: [],
+		mod: 'gen8',
+		team: 'random',
 		ruleset: [],
 	},
 	{

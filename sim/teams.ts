@@ -621,7 +621,12 @@ export const Teams = new class Teams {
 			TeamGenerator = require(Dex.forFormat(format).dataDir + '/cg-teams').default;
 		} else if (toID(format).includes('gen7randomdoublesbattle')) {
 			TeamGenerator = require(Dex.forFormat(format).dataDir + '/random-doubles-teams').default;
-		} else {
+		} else if(toID(format).includes('gen8randombattlemirroredteams')){
+			TeamGenerator = require(Dex.forFormat(format).dataDir + '/mirrored-random-teams').default;
+			console.log(TeamGenerator, seed)
+			return new TeamGenerator(format, seed);
+		}	
+		else {
 			TeamGenerator = require(Dex.forFormat(format).dataDir + '/random-teams').default;
 		}
 
