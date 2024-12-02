@@ -4,11 +4,12 @@ Pokémon Showdown Modified For Training Our Models
 The Original
 ------------------------------------------------------------------------
 
-Navigation: [Website][1] | **Server repository** | [Client repository][2] | [Dex repository][3]
+Navigation: [Website][1] | [Server repository][4] | [Client repository][2] | [Dex repository][3]
 
   [1]: http://pokemonshowdown.com/
   [2]: https://github.com/smogon/pokemon-showdown-client
   [3]: https://github.com/Zarel/Pokemon-Showdown-Dex
+  [4]: https://github.com/smogon/pokemon-showdown
 
 [![Build Status](https://github.com/smogon/pokemon-showdown/workflows/Node.js%20CI/badge.svg)](https://github.com/smogon/pokemon-showdown/actions?query=workflow%3A%22Node.js+CI%22)
 [![Dependency Status](https://img.shields.io/librariesio/github/smogon/pokemon-showdown)](https://libraries.io/github/smogon/pokemon-showdown)
