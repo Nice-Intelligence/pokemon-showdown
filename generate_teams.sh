@@ -1,0 +1,1 @@
+node pokemon-showdown generate-team gen8randombattle | node pokemon-showdown export-team

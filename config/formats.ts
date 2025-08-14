@@ -25,6 +25,13 @@ export const Formats: FormatList = [
 		section: "Bot Traing",
 	},
 	{
+		name:"[Gen 4] Random Battle Set Teams",
+		desc: `Format for importing set teams gathered from random battles used for RL training.`,
+		threads: [],
+		mod: 'gen4',
+		ruleset: ['HP Percentage Mod', 'Endless Battle Clause'],
+	},
+	{
 		name:"[Gen 8] Random Battle Set Teams",
 		desc: `Format for importing set teams gathered from random battles used for RL training. \m Possible Use Cases Below:`,
 		threads: [

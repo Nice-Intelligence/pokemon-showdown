@@ -1,0 +1,58 @@
+Seaking @ Life Orb  
+Ability: Swift Swim  
+Level: 93  
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe  
+- Waterfall  
+- Ice Beam  
+- Return  
+- Rain Dance  
+
+Volbeat (M) @ Leftovers  
+Ability: Swarm  
+Level: 98  
+EVs: 85 HP / 85 Def / 85 SpA / 85 SpD / 85 Spe  
+IVs: 0 Atk  
+- Tail Glow  
+- Substitute  
+- Bug Buzz  
+- Baton Pass  
+
+Heatran @ Leftovers  
+Ability: Flash Fire  
+Level: 74  
+EVs: 85 HP / 85 Def / 85 SpA / 85 SpD / 85 Spe  
+IVs: 0 Atk  
+- Substitute  
+- Lava Plume  
+- Toxic  
+- Protect  
+
+Vileplume @ Black Sludge  
+Ability: Chlorophyll  
+Level: 88  
+EVs: 85 HP / 85 Def / 85 SpA / 85 SpD / 85 Spe  
+IVs: 0 Atk  
+- Aromatherapy  
+- Sludge Bomb  
+- Synthesis  
+- Sleep Powder  
+
+Tauros (M) @ Choice Band  
+Ability: Intimidate  
+Level: 79  
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe  
+- Earthquake  
+- Stone Edge  
+- Double-Edge  
+- Pursuit  
+
+Dusknoir @ Leftovers  
+Ability: Pressure  
+Level: 84  
+EVs: 85 HP / 85 Atk / 85 Def / 85 SpA / 85 SpD / 85 Spe  
+- Focus Punch  
+- Pain Split  
+- Shadow Sneak  
+- Substitute  
+
+
